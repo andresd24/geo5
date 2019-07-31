@@ -1,0 +1,119 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+ }
+
+body{
+}
+
+html, body, #app {
+  height:100%;
+}
+
+#title {
+
+    height: 5%;
+    text-align: center
+
+}
+
+#container, #content {
+  height:100%;
+  display: flex;
+}
+
+#content {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+#content2 {
+  flex: 1;
+  padding: 100px;
+  align-items: top;
+  justify-content: center;
+}
+
+#footer {
+    display: bottom_text;
+    flex: 1;
+}
+
+
+#container {
+  height:100%;
+  display: flex;
+  padding: 10px;
+    background: url("/images/social/space2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+#content {
+  height:100%;
+  display: flex;
+  padding: 10px;
+
+}
+
+
+
+#selectAnimation, #selectDuration, #selectStagger {
+  padding: 10px;
+  width: 130px;
+}
+
+#selectAnimation:focus, #selectDuration:focus, #selectStagger:focus {
+  outline:0;
+}
+
+#panel-options {
+  background-color: #559ED3;
+  height: 100%;
+  width: 220px;
+  padding: 10px;
+  border-right: solid #FFF 2px;
+  box-shadow: #B5B5B5 3px 1px 7px 1px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+.fork-img {
+  position: absolute; top: 0; right: 0; border: 0;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

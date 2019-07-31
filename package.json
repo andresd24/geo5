@@ -1,0 +1,73 @@
+{
+  "name": "geo4",
+  "version": "1.0.0",
+  "description": "ReactJS circular menu",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline --content-base . --history-api-fallback --port 8080",
+    "test": "echo \"No test specified\" && exit 0",
+    "transpile": "babel src -d dist --copy-files",
+    "prepublishOnly": "yarn transpile",
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d examples/dist",
+    "publish-demo": "yarn build && yarn deploy"
+  },
+  "dependencies": {
+    "aws-amplify": "^1.1.33",
+    "eslint-plugin-import": "^2.16.0",
+    "history": "^4.9.0",
+    "jquery": "^3.3.1",
+    "lru-cache": "^5.1.1",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-router-dom": "^5.0.1",
+    "velocity-animate": "^1.5.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "eslint": "^5.14.1",
+    "eslint-plugin-react": "^7.12.4",
+    "gh-pages": "^2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-routes-plugin": "^0.1.3",
+    "node-sass": "^4.11.0",
+    "path": "^0.12.7",
+    "react-hot-loader": "^4.7.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.0"
+  },
+  "keywords": [
+    "circular",
+    "menu",
+    "react",
+    "reactjs",
+    "velocityjs",
+    "react-component"
+  ],
+  "homepage": "https://adevivancocm.com:8080/",
+  "licenses": [
+    {
+      "name": "MIT",
+      "url": "https://github.com/Antho2407/react-radial-menu/blob/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "mail": "anthony.damota06@gmail.com"
+  },
+  "author": "Anthony Da Mota",
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}
